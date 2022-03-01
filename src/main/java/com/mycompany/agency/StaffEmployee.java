@@ -28,10 +28,10 @@ public class StaffEmployee extends StaffMember {
     }
 
     //-----------------------------------------------------------------
-    // TODO 4:  [DONE] Returns the pay rate for this staff employee.
+    // TODO 4: [DONE] Returns the pay rate for this staff employee.
     //-----------------------------------------------------------------
     @Override
     public double pay() {
-        return this.payRate;
+        return this.payRate; 
     }
 }

@@ -1,6 +1,6 @@
 package com.mycompany.agency;
 
-// TODO 1: Make this class work and public
+// TODO 1: [DONE] Make this class work and public
 public abstract class StaffMember {
 
     protected String name;
