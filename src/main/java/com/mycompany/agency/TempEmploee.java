@@ -29,7 +29,7 @@ public class TempEmploee extends StaffEmployee {
     //-----------------------------------------------------------------
     public double pay()
     {
-
+        return 0; // Temporary
     }
 
     //-----------------------------------------------------------------
