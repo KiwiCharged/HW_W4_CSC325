@@ -1,7 +1,7 @@
 package com.mycompany.agency;
 
-// TODO 1: Make TempEmploee a child of StaffEmploee
-public class TempEmploee extends StaffEmployee {
+// TODO 1: [DONE] Make TempEmployee a child of StaffEmploee
+public class TempEmployee extends StaffEmployee {
 
     private int hoursWorked;
 
@@ -9,14 +9,14 @@ public class TempEmploee extends StaffEmployee {
     //  Constructor: Sets up this hourly employee using the specified
     //  information.
     //-----------------------------------------------------------------
-    public TempEmploee(String eName, String eAddress, String ePhone,
+    public TempEmployee(String eName, String eAddress, String ePhone,
             String socSecNumber, double rate) {
         super(eName, eAddress, ePhone, socSecNumber, rate);
         hoursWorked = 0;
     }
 
     //-----------------------------------------------------------------
-    // TODO2: Adds the specified number of hours to this employee's
+    // TODO 2: [DONE] Adds the specified number of hours to this employee's
     //  accumulated hours.
     //-----------------------------------------------------------------
     public void addHours(int moreHours) {
@@ -25,18 +25,20 @@ public class TempEmploee extends StaffEmployee {
 	
 	
     //-----------------------------------------------------------------
-    // TODO3: Computes and returns the pay for this hourly employee.
+    // TODO 3: [DONE] Computes and returns the pay for this hourly employee.
     //-----------------------------------------------------------------
+    @Override
     public double pay()
     {
-
+        return this.payRate * hoursWorked;
     }
 
     //-----------------------------------------------------------------
-    // TODO4: Returns information about this hourly employee as a string.
+    // TODO 4: [DONE] Returns information about this hourly employee as a string.
     //-----------------------------------------------------------------
+    @Override
     public String toString()
     {
-       return super.toString();
+       return super.toString() + "\nHours Worked: " + hoursWorked;
     }
 }

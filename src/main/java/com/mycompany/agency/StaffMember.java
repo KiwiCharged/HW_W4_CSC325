@@ -1,6 +1,6 @@
 package com.mycompany.agency;
 
-// TODO 1: Make this class work and public
+// TODO 1: [DONE] Make this class work and public
 public abstract class StaffMember {
 
     protected String name;
@@ -18,7 +18,7 @@ public abstract class StaffMember {
     }
 
     //-----------------------------------------------------------------
-    // TODO 2: Returns a string including the basic employee information.
+    // TODO 2: [DONE] Returns a string including the basic employee information.
     //-----------------------------------------------------------------
     @Override
     public String toString() {
